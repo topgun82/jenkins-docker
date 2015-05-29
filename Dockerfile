@@ -1,11 +1,13 @@
 from jenkins
 
-# Install git and maven
+# Install git, maven, default-jdk and Docker
 USER root
 RUN \
   apt-get update && \
   apt-get -y dist-upgrade && \
   apt-get install -y git maven default-jdk
+RUN wget -qO- https://get.docker.com/ | sh
+RUN usermod -aG docker jenkins
 USER jenkins
 
 # Add Git plugin
