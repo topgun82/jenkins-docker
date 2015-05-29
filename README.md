@@ -4,7 +4,8 @@ Jenkins Docker image that adds Git, Maven, default-jdk and the Jenkins Git SCM p
 ## Run
 
 ```
-docker run -d -p 8080:8080 --restart=always --name jenkins -v /home/ubuntu/jenkins:/var/jenkins_home jenkins
+docker run -d -p 8080:8080 --restart=always --name jenkins \
+  -v /home/ubuntu/jenkins:/var/jenkins_home jenkins
 ```
 
  * runs a container;
