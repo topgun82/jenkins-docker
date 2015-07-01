@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install -y \
 RUN wget -qO- https://get.docker.com/ | sh
 RUN usermod -aG docker jenkins
 RUN systemctl enable docker
+RUN service docker start
 
 USER jenkins
 
