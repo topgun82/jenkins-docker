@@ -8,11 +8,9 @@ RUN apt-get update && apt-get install -y \
   maven \
   default-jdk
 
-# Install Docker
+# Install Docker (to be used as a client only)
 RUN wget -qO- https://get.docker.com/ | sh
 RUN usermod -aG docker jenkins
-RUN systemctl enable docker
-RUN service docker start
 
 USER jenkins
 
