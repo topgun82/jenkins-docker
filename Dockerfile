@@ -9,11 +9,14 @@ RUN apt-get install -y curl tar bzip2
 RUN curl -sL https://deb.nodesource.com/setup | bash -
 
 # Install git, maven, default-jdk
-RUN apt-get clean && apt-get update && apt-get install -y \
-  git \
-  maven \
-  default-jdk \
-  nodejs
+RUN \
+  apt-get clean && \
+  apt-get update && \
+  apt-get install -y \
+    git \
+    maven \
+    default-jdk \
+    nodejs
 
 # Install Docker (to be used as a client only)
 RUN wget -qO- https://get.docker.com/ | sh
