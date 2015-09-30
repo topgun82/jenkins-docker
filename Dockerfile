@@ -14,6 +14,7 @@ RUN \
   apt-get install -y \
     curl \
     bzip2 \
+    traceroute \
     git \
     maven \
     default-jdk \
