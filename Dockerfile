@@ -16,6 +16,7 @@ RUN \
     bzip2 \
     traceroute \
     dnsutils \
+    tcpdump \
     git \
     maven \
     default-jdk \
