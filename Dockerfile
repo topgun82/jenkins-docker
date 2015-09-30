@@ -15,7 +15,7 @@ RUN \
     curl \
     bzip2 \
     traceroute \
-    host \
+    bind-utils \
     git \
     maven \
     default-jdk \
