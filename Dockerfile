@@ -17,6 +17,7 @@ RUN \
     traceroute \
     dnsutils \
     tcpdump \
+    telnet \
     git \
     maven \
     default-jdk \
