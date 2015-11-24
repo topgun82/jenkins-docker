@@ -22,10 +22,9 @@ docker run -d \
 
 ## Setup
 
-To set up JAVA_HOME, MAVEN_HOME and the Docker remote API:
+To set up MAVEN_HOME and the Docker remote API:
  * Manage Jenkins
  * Configure System
- * Add JDK, untick “install automatically”, JAVA_HOME: /usr/lib/jvm/default-java
  * (Keep Git default)
  * Add Maven, untick “install automatically”, MAVEN_HOME: /usr/share/maven
  * Set `Docker URL` to `http://docker:2375` (see --add-host above)
