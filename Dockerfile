@@ -19,7 +19,8 @@ RUN \
     tcpdump \
     telnet \
     git \
-    maven
+    maven \
+    nodejs
 
 # Install Docker (to be used as a client only)
 RUN wget -qO- https://get.docker.com/ | sh
